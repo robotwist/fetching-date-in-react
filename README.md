@@ -1,7 +1,8 @@
 # Weather API APP Using JS/React
 Alt methods to find hot and cold temps:
 const fetchMultipleData = async (cities) => {
-1. data.map - math.max - .min
+1. data.map - math.max - .min:
+   
     const data = await weatherService.showMultiple(cities);
 
     const temps = data.map(item => item.current.temp_f); // Extract temperatures
@@ -14,7 +15,10 @@ const fetchMultipleData = async (cities) => {
     setHottest(hottestCity);
     setColdest(coldestCity);
 };
-const fetchMultipleData = async (cities) => {
+
+2. Looping Method:
+
+    const fetchMultipleData = async (cities) => {
     const data = await weatherService.showMultiple(cities);
 
     let hottest = data[0];
