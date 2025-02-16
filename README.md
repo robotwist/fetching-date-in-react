@@ -1,1 +1,1 @@
-# Wather API APP Using JS/React
+# Weather API APP Using JS/React
